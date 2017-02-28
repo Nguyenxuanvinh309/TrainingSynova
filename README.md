@@ -5,3 +5,4 @@ Training Frontend of Synova
 + (28/02/2017 11:35AM)vinh.nguyenxuan: Upload file docx "BEM.docx"
 + (28/02/2017 13:13PM)vinh.nguyenxuan: Upload file docx "RESET.docx"
 + (28/02/2017 14:58PM)vinh.nguyenxuan: Upload file docx "Modernizr.docx"
++ (28/02/2017 16:40PM)vinh.nguyenxuan: Upload source code folder "demo_28022017"
