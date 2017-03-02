@@ -10,6 +10,7 @@ Training Frontend of Synova
 + (28/02/2017 16:45PM)vinh.nguyenxuan: Upload source code folder "demo_28022017"
 + Summary (28/02/2017): Finish 'SourceArchitect', 'BEM', DemoSourceCode, Basic Modernizr
 
++ (28/02/2017 3:39PM)vinh.nguyenxuan: Upload file docx "AnalyzePage.docx"
 
 
 
