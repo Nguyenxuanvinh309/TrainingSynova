@@ -1,0 +1,22 @@
+@import "../helpers/variables.scss";
+
+.grid-img{
+	padding: $padding-grid-img;
+}
+
+.grid-img > img{
+	width: $max-width;
+}
+
+.grid-img-col-12{
+	height: $max-height;
+	position: absolute;
+}
+
+.grid-img-col-12 img{
+	position: relative;
+	height: $max-height;
+	object-fit: none;
+	object-position: $gridimage-col-12-position-x $gridimage-col-12-position-y;
+}
+

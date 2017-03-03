@@ -1,0 +1,20 @@
+.grid-background-img-nolink{
+	background-image: url("../img/slide1.jpg"); 
+	padding: $gridtext-background-img-nolink $gridtext-background-img-nolink;
+}
+
+.grid-background-img-nolink .row .col-md-2 h1{
+	color: $gridtext-color; 
+	font-size: $bg-image-nolink-header-size; 
+	margin-top: $bg-image-nolink-header-margin-top;
+}
+
+.grid-group-img-nolink{
+	margin-top: $bg-image-nolink-area;
+}
+
+.grid-background-img-nolink .row .col-md-2 .grid-group-img-nolink > p{
+	font-size: $bg-image-nolink-text-size;
+	color: $gridtext-color; 
+	margin-top: $bg-image-nolink-text-margin-top;
+}

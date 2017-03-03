@@ -1,0 +1,46 @@
+@import "../helpers/variables.scss";
+
+.grid-textlink-area{
+	margin-top: $content-gridtext-margin-top;
+	position: absolute;
+	padding-left: $content-gridtext-padding-left;
+	padding-right: $content-gridtext-padding-right;
+}
+
+.grid-textlink-link{
+	float: right;
+	margin-top: $link-gridtext-margin-top;
+}
+
+.grid-textlink-title{
+	font-size: $title-gridtext-size; 
+	color: $gridtext-color; 
+	margin-top: $title-gridtext-margin-top;
+}
+
+.grid-textlink-description{
+	font-size: $description-gridtext-size; 
+	color: $gridtext-color;
+	line-height: $description-gridtext-lineheight;
+}
+
+.grid-background-blue{
+	background-color: $gridtext-background-blue;
+}
+
+.grid-background-orange{
+	background-color: $gridtext-background-orange;
+}
+
+.grid-background-grey{
+	background-color: $gridtext-background-grey;
+}
+
+.grid-background-white{
+	background-color: $gridtext-color;
+}
+
+.grid-background-white .grid-textlink-area .grid-textlink-title,
+.grid-background-white .grid-textlink-area .grid-textlink-description{
+	color: $gridtext-grey-color;
+}
