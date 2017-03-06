@@ -14,7 +14,7 @@ Training Frontend of Synova
 + (02/03/2017 3:39PM)vinh.nguyenxuan: Upload file docx "OnePage.docx"
 
 + (03/03/2017 16:45PM)vinh.nguyenxuan: Upload source code folder "demo_03032017"
-+ (06/03/2017 16:45PM)vinh.nguyenxuan: Upload source code folder "demo_06032017"
++ (06/03/2017 18:45PM)vinh.nguyenxuan: Upload source code folder "demo_06032017"
 
 
 
