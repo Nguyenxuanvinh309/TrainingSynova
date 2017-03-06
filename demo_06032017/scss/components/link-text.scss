@@ -1,0 +1,21 @@
+.linktext-content{
+	position: absolute; 
+	left: 10%; 
+	right: 10%;
+	top: 10%;
+	.linktext-content-title{
+		font-size: 2em;
+		color: #fff;
+		&.grey{
+			color: #3f3f3f;
+		}
+	}
+	.linktext-content-description{
+		font-size: 20px;
+		color: #fff;
+		&.grey{
+			color: #3f3f3f;
+		}
+	}
+}
+
