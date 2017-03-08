@@ -1,3 +1,39 @@
 body{
 	background-image: url('../img/slide1.jpg');
+	font-size: 18px;
+	font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
+}
+
+h1 {
+    font-family: "BebasNeueRegular", Arial, sans-serif;
+    font-size: 42px;
+}
+
+.content-area{
+	background-color: #fff; 
+	margin-left: -15px; 
+	margin-right: -15px;
+	padding-top: 2em;
+	padding-bottom: 3em;
+	.content--area-title{
+		color: #18aacf; 
+		text-transform: uppercase;
+		font-size: 42px;
+		margin-bottom: 1%;
+	}
+	.content--area-description{
+		display: block;
+		width: 80%;
+		text-align: center;
+		margin: auto;
+		font-size: 18px;
+	}
+	.content--area-map{
+		max-width: 100%;
+	}
+}
+
+
+.content-areaall{
+	margin-top: 4%;
 }

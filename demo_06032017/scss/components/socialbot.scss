@@ -1,0 +1,32 @@
+.social { position: absolute; right: 4.1%; margin-top: 3em; text-align: right; }
+.social-left {left: 4.1%;margin-top: 3em;text-align: left;}
+.social ul, .socialbot ul { padding: 0; margin: 0; } .social li { list-style-type: none; display: inline; font-size: 1.5em; margin-left: 1em; text-align: right;  } .social li:first-child, .socialbot li:first-child { margin-left: 0; }
+
+.socialbot { position: absolute; right: 10%; text-align:right }
+.socialbot li { list-style-type: none; display: inline; font-size: 1.2em; margin-left: 1em; text-align: right;  }
+
+.socicon, .sociconbot { font-family: 'socicon' !important; }
+.socicon, .sociconbot {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'socicon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.socicon:empty{
+  width: 1em;
+}
+
+a .socicon { color: #fff;  }  a:hover .socicon { color: rgba(255, 255, 255, 0.5); } 
+a .sociconbot { color: #242424;  }  a:hover .sociconbot { color: #f16529; } 
+
+.socicon-facebook:before { content: "b"; }
+.socicon-linkedin:before { content: "j"; }
+.socicon-flickr:before { content: "v"; }
+.socicon-vimeo:before { content: "s"; }
+
+.social-groupbtn{display: block;}

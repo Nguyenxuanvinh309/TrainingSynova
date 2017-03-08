@@ -1,0 +1,18 @@
+@media screen and (max-width: 1280px){
+	.menu-caption{
+		font-size: 68px;
+	}
+
+	.menu-description{
+		font-size: 38px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.social-groupbtn{display: none;}
+	.social-menu {
+	    float: left;
+	    position: absolute;
+	    margin-top: 14%;
+	}
+}

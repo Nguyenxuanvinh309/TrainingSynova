@@ -6,6 +6,8 @@
 	.linktext-content-title{
 		font-size: 2em;
 		color: #fff;
+		margin-top: 0em;
+		margin-bottom: 0.5em;
 		&.grey{
 			color: #3f3f3f;
 		}
@@ -15,6 +17,16 @@
 		color: #fff;
 		&.grey{
 			color: #3f3f3f;
+		}
+	}
+	> img{
+		width: inherit;
+	}
+	> a{
+		float: right;
+		margin-top: 1.5em;
+		> img{
+			width: inherit;
 		}
 	}
 }

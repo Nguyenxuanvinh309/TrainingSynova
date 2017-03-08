@@ -20,6 +20,18 @@
 	&.linktext-content-bg-white{
 		background-color: #fff;
 	}
+	.grid-area--bigimgleft{
+		object-fit: none;
+		object-position: -54px -181px;
+	}
+	.grid-area--bigimgright{
+		object-fit: cover;
+		object-position: 0px -212px;
+	}
+}
+
+#skills-area{
+	display: block;
 }
 
 .grid-area-col-5{
@@ -35,6 +47,7 @@
 		color: #fff;
 		font-size: 1.5em;
 		text-align: center;
-		margin-top: 0.3em;	
+		margin-top: 0.3em;
+		font-family: "BebasNeueRegular", Arial, sans-serif;	
 	}
 }
