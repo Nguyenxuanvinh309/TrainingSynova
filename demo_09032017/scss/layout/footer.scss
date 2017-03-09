@@ -1,0 +1,43 @@
+.footer-submit{
+	background-color: #18aacf; 
+	margin-left: -15px; 
+	margin-right: -15px; 
+	padding-top: 1em; 
+	padding-bottom: 1em;
+	.footer--submit-text{
+		display: inline-block; 
+		color: #fff;
+		text-align: center;
+		> span{
+			float: left;
+			text-transform: uppercase;
+			font-size: 42px;
+			padding-top: 8px;
+			margin-left: 0.7em;
+			margin-right: 0.7em;
+		}
+	}
+}
+
+.footer-info{
+	background-color: #fff;
+    padding-top: 2em;
+    padding-bottom: 4.5em;
+}
+
+.footer--info-coltext{
+	padding-top: 3%!important;
+}
+
+.footer--info-text{
+	background-color: #fff;
+    padding-top: 0em;
+    padding-bottom: 2em;
+	margin-left: -15px;
+	margin-right: -15px;
+	> p{
+		display: inline-block; 
+		font-size: 0.7em;
+		width: 80%;
+	}
+}
