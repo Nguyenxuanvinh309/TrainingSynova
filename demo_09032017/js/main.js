@@ -11,9 +11,10 @@ function SetHeightGrid() {
 	$(".height-col-cself").css("height", $(".height-col-main").height()*2);
 	$(".height-col-ctext").css("height", $(".height-col-ptext").height());
 	$(".height-col-picdouc").css("height", $(".height-col-picdoup").height());
-
-	/*With Screen < 768px*/
-	if($("body").width() < 768){
+	
+	// alert($("body").width());
+	/*With Screen < 750px*/
+	if($("body").width() < 750){
 		$(".height-col-child").css("height", $(".height-col-main").height()/4);
 	}
 }
