@@ -1,0 +1,26 @@
+.bullet{
+	margin-left: $bullet-position;
+	-webkit-transform: scale($bullet-size); /* Saf3.1+, Chrome */
+     -moz-transform: scale($bullet-size); /* FF3.5+ */
+      -ms-transform: scale($bullet-size); /* IE9 */
+       -o-transform: scale($bullet-size); /* Opera 10.5+ */
+          transform: scale($bullet-size);
+    &.bullet-address{
+    	margin-top: $bullet-address-top;
+    	margin-bottom: $bullet-address-bot;
+    }
+    &.bullet-job{
+    	margin-right: $bullet-job-right;
+    }
+}
+
+.bullet-text{
+	line-height: $bullet-text-heightline;
+	font-size: $bullet-text-font;
+	margin-top: $bullet-text-top;
+	margin-bottom: $bullet-text-bot;
+	&.bullet--text-address{
+		display: flex;
+		width: $bullet-text-address-width;
+	}
+}

@@ -1,0 +1,23 @@
+body{
+	font-size: $default-size;
+	color: $default-color;
+	font-family: "OpenSans-Regular";
+}
+
+a{
+	color: $default-color;
+	&:hover{
+		color: $default-color;
+	}
+}
+
+.hightext-black{
+	color:$default-color-black;
+	&.hightext--black-bold{
+		font-family: 'OpenSans-SemiBold';
+	}
+	&.hightext--black-large{
+		font-size: $hightext-black-large-size;
+	}
+}
+

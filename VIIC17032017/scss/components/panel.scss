@@ -1,0 +1,19 @@
+.panel--title-parent{
+	position: relative;
+	top: $panel-title-parent-top;
+	font-size: $panel-title-parent-font;
+	color: $panel-title-parent-color;
+}
+
+span.panel--title-child {
+    position: absolute;
+    top: $panel-title-child-top;
+    right: $panel-title-child-right;
+    cursor: pointer;
+} 
+
+.list-group-item.list--group-child{
+	border: none;
+	padding-left: $list-group-child-left;
+	padding-right: $list-group-child-right;
+}
