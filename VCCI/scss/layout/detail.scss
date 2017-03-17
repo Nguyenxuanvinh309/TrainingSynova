@@ -1,0 +1,38 @@
+@import "../helpers/variables.scss";
+
+.detail-area{
+	margin-bottom: $detail-area-bot;
+	position: relative;
+	.detail--area-id{
+		float: right;
+		position: absolute;
+		right: $detail-area-id-right;
+		top: $detail-area-id-top;
+		font-size: $detail-area-id-size;
+		font-family: 'OpenSans-Bold';
+		color: $default-color-black;
+		&.detail--area-listid{
+			top: $detail-area-listid-top;
+			font-family: 'OpenSans-Bold';
+		}
+	}
+	.detail--area-item{
+		padding-top: $detail--area-item-top;
+		padding-bottom: $detail--area-item-bot;
+	}
+}
+.detail--area-name{
+	font-family:'OpenSans-Semibold';
+}
+
+.detail-area-left{
+	margin-top: $detail-arealeft-top;
+}
+
+.col-5-detail{
+	width: $col-5-detail-width;
+}
+
+.col-7-detail{
+	width: $col-7-detail-width;
+}
