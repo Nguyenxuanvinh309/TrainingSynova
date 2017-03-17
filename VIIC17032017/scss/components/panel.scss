@@ -12,6 +12,13 @@ span.panel--title-child {
     cursor: pointer;
 } 
 
+.list-group-parent{
+	overflow-y: scroll !important;
+	max-height: $list-group-parent-maxheight;
+	margin-left: $list-group-parent-left;
+    margin-right: $list-group-parent-right;
+}
+
 .list-group-item.list--group-child{
 	border: none;
 	padding-left: $list-group-child-left;
