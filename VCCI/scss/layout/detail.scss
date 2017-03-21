@@ -11,14 +11,18 @@
 		font-size: $detail-area-id-size;
 		font-family: 'OpenSans-Bold';
 		color: $default-color-black;
-		&.detail--area-listid{
-			top: $detail-area-listid-top;
-			font-family: 'OpenSans-Bold';
-		}
+	}
+	.detail--area-result{
+		@extend .detail--area-id;
+		font-style: italic;
+		color: #31ace0;
 	}
 	.detail--area-item{
 		padding-top: $detail--area-item-top;
 		padding-bottom: $detail--area-item-bot;
+	}
+	> img{
+		width: $max-width;
 	}
 }
 .detail--area-name{
@@ -27,6 +31,14 @@
 
 .detail-area-left{
 	margin-top: $detail-arealeft-top;
+}
+
+.detail--area-readmore{
+	margin-top: $detail-area-readmore-top;
+	> a{
+		color: $detail-area-readmore-color;
+		font-family: 'OpenSans-Bold';
+	}
 }
 
 .col-5-detail{

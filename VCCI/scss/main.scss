@@ -9,6 +9,15 @@
 
 /*Component*/
 @import "components/bullet.scss";
+@import "components/panel.scss";
+@import "components/scroll.scss";
+@import "components/search.scss";
+@import "components/radio.scss";
+@import "components/breakline.scss";
+@import "components/button.scss";
+
+/*Custom*/
+@import "customize.scss";
 
 /*Responsive*/
 @import "responsive/responsive.scss";

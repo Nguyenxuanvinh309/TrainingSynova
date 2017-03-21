@@ -9,6 +9,9 @@
     	margin-top: $bullet-address-top;
     	margin-bottom: $bullet-address-bot;
     }
+    &.bullet-job{
+    	margin-right: $bullet-job-right;
+    }
 }
 
 .bullet-text{

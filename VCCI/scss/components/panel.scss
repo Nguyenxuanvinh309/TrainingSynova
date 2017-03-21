@@ -1,0 +1,39 @@
+.panel-heading-search{
+	height: 57px;
+}
+
+.panel--title-parent{
+	position: relative;
+	top: $panel-title-parent-top;
+	font-size: $panel-title-parent-font;
+	color: $panel-title-parent-color;
+	&.list-group-parentmain, &.list-group-parentlevel, &.list-group-parentarea{
+		color: #a1a1a1;
+		top: 10px;
+	}
+}
+
+span.panel--title-child {
+    position: absolute;
+    top: $panel-title-child-top;
+    right: $panel-title-child-right;
+    cursor: pointer;
+} 
+
+.list-group-parent{
+	overflow-y: scroll !important;
+	max-height: $list-group-parent-maxheight;
+	margin-left: $list-group-parent-left;
+    margin-right: $list-group-parent-right;
+}
+
+ul.list-group.list-group-parent > li:hover {
+    color: #004594;
+}
+
+.list-group-item.list--group-child{
+	border: none;
+	padding-left: $list-group-child-left;
+	padding-right: $list-group-child-right;
+	cursor: pointer;
+}
