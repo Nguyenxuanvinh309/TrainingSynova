@@ -9,9 +9,19 @@ function CheckEmptyPanel(){
 		$collapseParent = $('#collapse' + $valueID + '> .list-group.list-group-parent');
 		$collapseChild = '#collapse' + $valueID + '.panel-collapse.collapse';
 
-		if ($collapseParent.length){  
+		if (!$collapseParent.length){  
+			$($collapseChild).empty();
+			$($collapseChild).append('<p>No Empty</p>');
+			$($collapseChild + '> p').css('margin-left','15px');
 		}
-		else{
+	});
+
+	$('.panel-group .panel-group-list').click(function(){
+		$valueID = $(this).index() + 1;	
+		$collapseParent = $('#collapse' + $valueID + '> .list-group.list-group-parent');
+		$collapseChild = '#collapse' + $valueID + '.panel-collapse.collapse';
+
+		if (!$collapseParent.length){  
 			$($collapseChild).empty();
 			$($collapseChild).append('<p>No Empty</p>');
 			$($collapseChild + '> p').css('margin-left','15px');
