@@ -433,7 +433,7 @@ template {
     right: 0;
     top: 0;
     font-size: 16px;
-    font-family: "OpenSans-Bold";
+    font-family: 'OpenSans-Bold';
     color: #363636; }
   .detail-area .detail--area-info {
     margin-top: 32px; }
@@ -449,7 +449,7 @@ template {
     width: 100%; }
 
 .detail--area-name {
-  font-family: "OpenSans-Semibold";
+  font-family: 'OpenSans-Semibold';
   font-size: 16px;
   margin-bottom: 0px; }
 
@@ -462,7 +462,7 @@ template {
   margin-top: 7%; }
   .detail--area-readmore > a {
     color: #f1c40f;
-    font-family: "OpenSans-Bold";
+    font-family: 'OpenSans-Bold';
     font-size: 15.63px; }
 
 .col-5-detail {
@@ -838,4 +838,4 @@ input[type="radio"]:checked:before {
   .page-number .page--number-press.page--number--press-right {
     right: 22%; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css[A.map */

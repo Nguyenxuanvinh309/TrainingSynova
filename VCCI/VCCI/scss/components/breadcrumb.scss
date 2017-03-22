@@ -3,9 +3,9 @@
 .hightext-grey{
 	font-family: 'OpenSans-SemiBold';
 	&.hightext--grey-breadcrumb{
-		margin-bottom: 36px;
+		margin-bottom: $hightext-grey-breadcrumb-bot;
 	}
 	.active{
-		color: #707070;
+		color: $hightext-grey-active-breadcrumb;
 	}
 }

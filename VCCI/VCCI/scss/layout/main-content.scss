@@ -17,24 +17,24 @@ a{
 	color:$default-color-black;
 	&.hightext--black-bold{
 		font-family: 'OpenSans-SemiBold';
-		line-height: 1.5;
+		line-height: $hightext-black-bold-lineheight;
 	}
 	&.hightext--black-large{
 		font-size: $hightext-black-large-size;
-    	margin-top: -8px;
+    	margin-top: $hightext-black-large-top;
     	font-family: 'OpenSans-Semibold';
 	}
 }
 
 .hightext-blue{
 	font-family: 'OpenSans-Bold';
-	color: #004594;
-	font-size: 18px;
+	color: $hightext-blue-color;
+	font-size: $hightext-blue-size;
 	&.hightext--blue-title{
-		margin-top: 24px;
-		margin-bottom: 38px;
+		margin-top: $hightext-blue-title-top;
+		margin-bottom: $hightext-blue-title-bot;
 		&.hightext--blue-boldtitle{
-			font-size: 20px;
+			font-size: $hightext-blue-boldtitle-size;
 		}
 	}
 }

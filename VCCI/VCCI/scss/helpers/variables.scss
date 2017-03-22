@@ -11,12 +11,26 @@ $detail-area-id-top: 0;
 $detail-area-id-right: 0;
 $detail-area-id-size: 16px;
 $detail-area-listid-top: 10%;
+$detail-area-listid-font: 'OpenSans-Bold';
 
-$detail--area-item-top: 8px;
-$detail--area-item-bot: 8px;
+$detail-area-item-top: 8px;
+$detail-area-item-bot: 8px;
+$detail-area-item-size: 16px;
 
 $detail-area-readmore-top: 7%;
 $detail-area-readmore-color: #f1c40f;
+$detail-area-readmore-size: 15.63px;
+$detail-area-readmore-font: 'OpenSans-Bold';
+
+$detail-area-info-top: 32px;
+$detail-area-result-color: #31ace0;
+$detail-area-result-size: 18px;
+
+$detail-area-name-size: 16px;
+$detail-area-name-bot: 0px;
+$detail-area-name-font: 'OpenSans-Semibold';
+
+$detail-area-left-title-top: 16px;
 
 $col-5-detail-width: calc(3 / 8 * 100%);
 $col-7-detail-width: calc(5 / 8 * 100%);
@@ -55,3 +69,46 @@ $panel-title-child-top: 0px;
 $panel-title-child-right: -9px;
 
 $hightext-black-large-size: 26px;
+$hightext-black-large-top: -8px;
+$hightext-black-bold-lineheight: 1.5;
+$hightext-grey-breadcrumb-bot: 36px;
+$hightext-grey-active-breadcrumb: #707070;
+$hightext-blue-color: #004594;
+$hightext-blue-size: 18px;
+$hightext-blue-title-top: 24px;
+$hightext-blue-title-bot: 38px;
+$hightext-blue-boldtitle-size: 20px;
+
+$breakline-color:#d1d1d1;
+$breakline-top: 63px;
+$breakline-bot: 46px;
+
+$button-search-bg-color: #f0c311;
+$button-search-border-radius: 0;
+$button-search-height: 50px;
+$button-search-width: 204px;
+$button-search-content-left: 11px;
+$button-search-content-right: 11px;
+$button-search-content-imgitem: scale(0.8);
+$button-search-content-imgitem-height: 28px;
+$button-search-content-centeritem-left: 11px;
+$button-search-content-centeritem-right: 11px;
+$button-search-content-centeritem-size: 13px;
+$button-search-content-centeritem-color: #004594;
+$button-search-content-centeritem-font: 'OpenSans-Semibold';
+$button-search-content-leftitem-right: -14px;
+$button-search-content-leftitemspan-left: 15px;  
+$button-search-content-leftitemspan-right: 15px; 
+$button-search-content-leftitemimg: scale(0.3);
+$button-search-content-leftitemimg-height: 28px;
+
+$panel-heading-search-height: 57px;
+$panel-title-parent-sub-top: 10px;
+$list-group-child-hovercolor: #004594;
+
+$search-area-parent-bot: 40px;
+$search-area-child-top: 21px;
+$search-area-child-height: 57px;
+$search-area-panelchild-top: 28px;
+$search-area-panelchild-item-bot: 9px;
+$search-area-finalparent-bot: 58px;

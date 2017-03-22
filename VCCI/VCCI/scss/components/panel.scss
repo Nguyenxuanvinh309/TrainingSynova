@@ -1,7 +1,7 @@
 @import "../helpers/variables.scss";
 
 .panel-heading-search{
-	height: 57px;
+	height: $panel-heading-search-height;
 }
 
 .panel--title-parent{
@@ -10,8 +10,8 @@
 	font-size: $panel-title-parent-font;
 	color: $panel-title-parent-color;
 	&.list-group-parentmain, &.list-group-parentlevel, &.list-group-parentarea{
-		color: #a1a1a1;
-		top: 10px;
+		color: $default-color;
+		top: $panel-title-parent-sub-top;
 	}
 }
 
@@ -30,7 +30,7 @@ span.panel--title-child {
 }
 
 ul.list-group.list-group-parent > li:hover {
-    color: #004594;
+    color: $list-group-child-hovercolor;
 }
 
 .list-group-item.list--group-child{

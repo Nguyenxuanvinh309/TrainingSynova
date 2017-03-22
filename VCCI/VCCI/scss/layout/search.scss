@@ -2,21 +2,21 @@
 
 .search-area{
 	.search--area-parent{
-		margin-bottom: 40px;
+		margin-bottom: $search-area-parent-bot;
 		.search--area-child{
-			margin-top: 21px;
+			margin-top: $search-area-child-top;
 			> form > input{
-				height: 57px;
+				height: $search-area-child-height;
 			}
 			&.search--area-panelchild{
-				margin-top: 28px;
+				margin-top: $search-area-panelchild-top;
 				.search--area--panelchild-item{
-					margin-bottom: 9px;
+					margin-bottom: $search-area-panelchild-item-bot;
 				}
 			}
 		}
 		&.search--area-finalparent{
-			margin-bottom: 58px;
+			margin-bottom: $search-area-finalparent-bot;
 		}
 	}
 }

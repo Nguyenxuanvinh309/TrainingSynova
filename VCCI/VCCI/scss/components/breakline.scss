@@ -1,7 +1,7 @@
 @import "../helpers/variables.scss";
 
 .breakline{
-	border-top: 1px solid #d1d1d1;
-	margin-top: 63px;
-    margin-bottom: 46px;
+	border-top: 1px solid $breakline-color;
+	margin-top: $breakline-top;
+    margin-bottom: $breakline-bot;
 }
