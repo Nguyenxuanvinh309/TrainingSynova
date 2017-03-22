@@ -1,0 +1,62 @@
+@import "../helpers/variables.scss";
+
+::-webkit-scrollbar{
+      width: $scrollbar-width;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+      background-color: $scrollbar-track-color;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: $scrollbar-thumb-color; 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: $scrollbar-button-color$scrollbar-corner-color;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: $scrollbar-corner-color;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+::-moz-scrollbar{
+      width: $scrollbar-width;
+}
+
+::-moz-scrollbar-track {
+      background-color: $scrollbar-track-color;
+}
+ 
+::-moz-scrollbar-thumb {
+      background-color: $scrollbar-thumb-color; 
+}
+ 
+::-moz-scrollbar-button {
+      background-color: $scrollbar-button-color$scrollbar-corner-color;
+}
+ 
+::-moz-scrollbar-corner {
+      background-color: $scrollbar-corner-color;
+}
+
+::-o-scrollbar{
+      width: $scrollbar-width;
+}
+
+::-o-scrollbar-track {
+      background-color: $scrollbar-track-color;
+}
+ 
+::-o-scrollbar-thumb {
+      background-color: $scrollbar-thumb-color; 
+}
+ 
+::-o-scrollbar-button {
+      background-color: $scrollbar-button-color$scrollbar-corner-color;
+}
+ 
+::-o-scrollbar-corner {
+      background-color: $scrollbar-corner-color;
+}

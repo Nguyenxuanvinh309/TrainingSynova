@@ -1,0 +1,11 @@
+@import "../helpers/variables.scss";
+
+.hightext-grey{
+	font-family: 'OpenSans-SemiBold';
+	&.hightext--grey-breadcrumb{
+		margin-bottom: 36px;
+	}
+	.active{
+		color: #707070;
+	}
+}

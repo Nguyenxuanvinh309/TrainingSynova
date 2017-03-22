@@ -1,0 +1,13 @@
+.panel.panel-default {
+    border-radius: 0;
+}
+
+.panel-default>.panel-heading{
+	cursor: pointer;
+	background-color: #ffffff;
+	height: 57px;
+}
+
+.radio-inline, .checkbox-inline {
+    font-size: 16px;
+}

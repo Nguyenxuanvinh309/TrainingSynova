@@ -1,0 +1,61 @@
+@import "../helpers/variables.scss";
+
+.detail-area{
+	margin-bottom: $detail-area-bot;
+	position: relative;
+	.detail--area-id{
+		float: right;
+		position: absolute;
+		right: $detail-area-id-right;
+		top: $detail-area-id-top;
+		font-size: $detail-area-id-size;
+		font-family: 'OpenSans-Bold';
+		color: $default-color-black;
+	}
+	.detail--area-info{
+		margin-top: 32px;
+	}
+	.detail--area-result{
+		@extend .detail--area-id;
+		font-style: italic;
+		color: #31ace0;
+		font-size: 18px;
+	}
+	.detail--area-item{
+		padding-top: $detail--area-item-top;
+		padding-bottom: $detail--area-item-bot;
+		font-size: 16px;
+	}
+	> img{
+		width: $max-width;
+	}
+}
+.detail--area-name{
+	font-family:'OpenSans-Semibold';
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.detail-area-left{
+	margin-top: $detail-arealeft-top;
+	.row .detail--area--left-title{
+		margin-top: 16px;
+	}
+}
+
+.detail--area-readmore{
+	margin-top: $detail-area-readmore-top;
+	> a{
+		color: $detail-area-readmore-color;
+		font-family: 'OpenSans-Bold';
+    	font-size: 15.63px;
+	}
+}
+
+.col-5-detail{
+	width: $col-5-detail-width;
+}
+
+.col-7-detail{
+	width: $col-7-detail-width;
+}

@@ -1,0 +1,41 @@
+@import "../helpers/variables.scss";
+
+body{
+	font-size: $default-size;
+	color: $default-color;
+	font-family: "OpenSans-Regular";
+}
+
+a{
+	color: $default-color;
+	&:hover{
+		color: $default-color;
+	}
+}
+
+.hightext-black{
+	color:$default-color-black;
+	&.hightext--black-bold{
+		font-family: 'OpenSans-SemiBold';
+		line-height: 1.5;
+	}
+	&.hightext--black-large{
+		font-size: $hightext-black-large-size;
+    	margin-top: -8px;
+    	font-family: 'OpenSans-Semibold';
+	}
+}
+
+.hightext-blue{
+	font-family: 'OpenSans-Bold';
+	color: #004594;
+	font-size: 18px;
+	&.hightext--blue-title{
+		margin-top: 24px;
+		margin-bottom: 38px;
+		&.hightext--blue-boldtitle{
+			font-size: 20px;
+		}
+	}
+}
+
