@@ -1,0 +1,22 @@
+@import "../helpers/variables.scss";
+
+.search-area{
+	.search--area-parent{
+		margin-bottom: $search-area-parent-bot;
+		.search--area-child{
+			margin-top: $search-area-child-top;
+			> form > input{
+				height: $search-area-child-height;
+			}
+			&.search--area-panelchild{
+				margin-top: $search-area-panelchild-top;
+				.search--area--panelchild-item{
+					margin-bottom: $search-area-panelchild-item-bot;
+				}
+			}
+		}
+		&.search--area-finalparent{
+			margin-bottom: $search-area-finalparent-bot;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+@import "../helpers/variables.scss";
+
+.button-search{
+	background-color: $button-search-bg-color;
+	border: none;
+	border-radius: $button-search-border-radius;
+	height: $button-search-height;
+    width: $button-search-width;
+	.button--search-content{
+		padding-left: $button-search-content-left;
+		padding-right: $button-search-content-right;
+		position: relative;
+		.button--search--content-item{
+			display: inline-table;
+			> img{
+				-webkit-transform: $button-search-content-imgitem; /* Saf3.1+, Chrome */
+				-moz-transform: $button-search-content-imgitem; /* FF3.5+ */
+				-ms-transform: $button-search-content-imgitem; /* IE9 */
+				-o-transform: $button-search-content-imgitem; /* Opera 10.5+ */
+				transform: $button-search-content-imgitem;
+				height: $button-search-content-imgitem-height;
+			}
+			.button--search--content-centeritem{
+				padding-left: $button-search-content-centeritem-left;
+				padding-right: $button-search-content-centeritem-right;
+				font-size: $button-search-content-centeritem-size;
+				color: $button-search-content-centeritem-color;
+				font-family: $button-search-content-centeritem-font;
+			}
+			&.button--search--content-leftitem{
+				margin-right: $button-search-content-leftitem-right;
+				> span{
+					padding-left: $button-search-content-leftitemspan-left;
+					padding-right: $button-search-content-leftitemspan-right;
+					color: $default-color;
+				}
+				> img{
+					-webkit-transform: $button-search-content-leftitemimg; /* Saf3.1+, Chrome */
+					-moz-transform: $button-search-content-leftitemimg; /* FF3.5+ */
+					-ms-transform: $button-search-content-leftitemimg; /* IE9 */
+					-o-transform: $button-search-content-leftitemimg; /* Opera 10.5+ */
+					transform: $button-search-content-leftitemimg;
+					height: $button-search-content-leftitemimg-height;
+				}
+			}
+		}
+	}
+}

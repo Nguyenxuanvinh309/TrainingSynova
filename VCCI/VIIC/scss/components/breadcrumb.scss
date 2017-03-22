@@ -1,0 +1,11 @@
+@import "../helpers/variables.scss";
+
+.hightext-grey{
+	font-family: 'OpenSans-SemiBold';
+	&.hightext--grey-breadcrumb{
+		margin-bottom: $hightext-grey-breadcrumb-bot;
+	}
+	.active{
+		color: $hightext-grey-active-breadcrumb;
+	}
+}

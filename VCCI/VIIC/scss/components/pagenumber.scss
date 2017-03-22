@@ -1,0 +1,43 @@
+@import "../helpers/variables.scss";
+
+.page-number{
+	position: relative;
+	top: 15px;
+	left: 13px;
+	.page--number-press{
+		transform: scale(0.4);
+		position: absolute;
+		&.page--number--press-left{
+			left: 39%; 
+			top: 1px;
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+		&.page--number--press-right{
+			right: 39%; 
+			top: 1px;
+			&:hover{
+				opacity: 0.5;
+			}
+		}
+	}
+	.page--number-item{
+		font-size: 17.84px;  
+		font-family: 'OpenSans-Semibold';
+		padding: 7px;
+		&.active{
+			color: #f1c40f;
+			border-bottom: 3px solid;
+			padding-bottom: 0;
+		}
+		&:hover{
+			text-decoration: none;
+			color: #f1c40f;
+		}
+	}
+	&.page--number-list{
+		top: 30px;
+		left: 15px;
+	}
+}
