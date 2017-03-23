@@ -17,6 +17,7 @@ Training Frontend of Synova
 + (06/03/2017 18:45PM)vinh.nguyenxuan: Upload source code folder "demo_06032017"
 + (09/03/2017 17:45PM)vinh.nguyenxuan: Upload source code folder "demo_09032017"
 
++ (23/03/2017 18:28PM)vinh.nguyenxuan: Upload Doc "WordpressCMSBasic.doc"
 
 
 ### Preview:
