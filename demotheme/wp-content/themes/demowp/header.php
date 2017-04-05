@@ -10,5 +10,5 @@
 	<div id="container">
 		<div class="logo">
 		    <?php demo_menu('primary-menu'); ?>
-			<?php demo_header(); ?>
+			<?php demo_header_content(); ?>
 		</div>

@@ -7,9 +7,6 @@
 define( 'THEME_URL', get_stylesheet_directory() );
 define( 'CORE', THEME_URL . '/core' );
 
-/** @Import file /core/init.php **/
-require_once( CORE . '/init.php' );
-
 /** Set up content width **/
 if( !isset($content_width) ){
 	$content_width = 620;
@@ -60,7 +57,6 @@ if( !function_exists('demo_theme_setup') ){
 		);
 		register_sidebar($sidebar);
 	}
-	add_action( 'init','demo_theme_setup' );
 }
 ?>
 
@@ -68,10 +64,10 @@ if( !function_exists('demo_theme_setup') ){
 <?php
 	/**----------------TEMPLATE FUNCTIONS---------------**/
 ?>
-
 <?php
-if(!function_exists('demo_header')){
-	function demo_header(){ 
+/**----------Header Site Name----------**/
+if(!function_exists('demo_header_content')){
+	function demo_header_content(){ 
 ?>
 		<div class="site-name">
 			<?php
@@ -97,6 +93,56 @@ if(!function_exists('demo_header')){
 ?>
 
 <?php
+/**----------Header of content----------**/
+if(!function_exists('demowp_entry_header')){
+	function demowp_entry_header(){
+?>
+
+		<?php if(is_single()): ?>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+		<?php else:?>
+			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		<?php endif; ?>
+<?php 
+	}
+}
+?>
+<?php 
+/**----------Meta of content(author, date-published, category, comment number)----------**/
+if(!function_exists('demowp_entry_meta')){
+	function demowp_entry_meta(){
+		if(!is_page()):{
+?>
+
+			<div class="entry-meta">
+				<?php
+					/**author, date-published, category, comment number**/
+					printf(__('<span class="autho">Posted by %1$s</span>', 'demowp'), get_the_author());
+					printf(__('<span class="date-published"> at %1$s</span>', 'demowp'), get_the_date());
+					printf(__('<span class="category"> in %1$s </span>', 'demowp'), get_the_category_list( ',' ));
+
+					/**Content Number**/
+					if(comments_open()):
+						echo '<span class="meta-reply">';
+							comments_popup_link(
+								__( 'Leave a comment', 'demowp' ),
+								__( 'One comment', 'demowp' ),
+								__( '% comment', 'demowp' ),
+								__( 'Read all comment', 'demowp' )
+							);
+						echo '</span>';
+					endif;
+				?>
+			</div>
+<?php
+		}
+		endif;
+	}
+}
+?>
+
+<?php
+/**----------Menu----------**/
 if(!function_exists('demo_menu')){
 	function demo_menu($menu){
 		$menu = array(
@@ -110,34 +156,36 @@ if(!function_exists('demo_menu')){
 ?>
 
 <?php 
-	if(!function_exists('demo_pagination')){
-		function demo_pagination(){
-			if($GLOBALS['wp_query'] -> max_num_pages < 2){
-				return '';
-			}
+/**----------Pagination----------**/
+if(!function_exists('demo_pagination')){
+	function demo_pagination(){
+		if($GLOBALS['wp_query'] -> max_num_pages < 2){
+			return '';
+		}
 ?>
 
-			<nav class="pagination" role="navigation">
-				<?php if(next_posts_link()) : ?>
-					<div class="prev">
-						<?php next_posts_link(__('Older Posts', 'demowp') ); ?>
-					</div>
-				<?php endif; ?>
+		<nav class="pagination" role="navigation">
+			<?php if(next_posts_link()) : ?>
+				<div class="prev">
+					<?php next_posts_link(__('Older Posts', 'demowp') ); ?>
+				</div>
+			<?php endif; ?>
 
-				<?php if(previous_posts_link()) : ?>
-					<div class="next"> 
+			<?php if(previous_posts_link()) : ?>
+				<div class="next"> 
 						<?php previous_posts_link(__('Newest Posts', 'demowp') ); ?>
-					</div>
-				?>
-				<?php endif; ?>
-			</nav>
+				</div>
+			?>
+			<?php endif; ?>
+		</nav>
 <?php
-		}
 	}
+}
 ?>
 
 
 <?php 
+/**----------Thumbnail Image Size----------**/
 if(!function_exists('demowp_thumbnail')){
 	function demowp_thumbnail($size){
 		if(!is_single() && has_post_thumbnail() && !post_password_required() || has_post_format('image')):
@@ -153,18 +201,47 @@ if(!function_exists('demowp_thumbnail')){
 ?>
 
 <?php
-if(!function_exists('demowp_entry_header')){
-	function demowp_entry_header(){
-?>
+/**----------Content of content----------**/
+if(!function_exists('demowp_entry_content')){
+	function demowp_entry_content(){
+		if(!is_single() && !is_page()){
+			the_excerpt();
+		}else{
+			the_content();
 
-		<?php if(is_single()): ?>
-			<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
-		<?php else:?>
-			<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-		<?php endif; ?>
-<?php 
+			/*Paging in single*/
+			$link_pages = array(
+				'before' => __( '<p>Page: ', 'demowp' ),
+				'after' => __( '</p', 'demowp' ),
+				'nextpagelink' => __( 'Next Page', 'demowp' ),
+				'previouspagelink' => __( 'Previous Page', 'demowp' )
+			);
+			wp_link_pages( $link_pages );
+		}
 	}
 }
 ?>
 
+<?php
+/**----------Readmore of content----------**/
+function demowp_entry_readmore(){
+	return '<p><a class="read-more" href="'. get_permalink( get_the_ID()) .'">'.__( 'Read More', 'demowp' ) . '</a></p>';
+}
+add_filter('excerpt_more','demowp_entry_readmore');
+?>
+
+<?php 
+/**----------Tag in post----------**/
+if(!function_exists('demo_entry_tag')){
+	function demo_entry_tag(){
+		if(is_single()){
+			if(has_tag()):
+				echo '<div class="entry_tag"';
+				printf(__( 'Tagged in %1$s', 'demowp' ), get_the_tag_list(' ', ','));
+				echo '</div>';
+			endif;
+		}
+	}
+}
+?>
 <?php
