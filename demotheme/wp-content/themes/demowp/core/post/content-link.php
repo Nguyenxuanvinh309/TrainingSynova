@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID();?>" <?php post_class(); ?> >
 	<div class="entry-thumbnail">
-		<?php demowp_thumbnail('thumbnail'); ?>
+		<?php demotheme_thumbnail('thumbnail'); ?>
 	</div>
 	<div class="entry-header">
 		<?php 
@@ -23,6 +23,6 @@
 			printf('<a href="%1$s">%2$s</a>',
 			$link, $link_description);
 		?>
-		<?php demo_entry_tag(); ?>
+		<?php get_template_part( 'core/post/content', 'tag' ); ?>
 	</div>
 </article>

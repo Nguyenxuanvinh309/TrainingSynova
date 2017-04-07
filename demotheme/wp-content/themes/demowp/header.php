@@ -9,6 +9,6 @@
 <body <?php body_class(); ?> >
 	<div id="container">
 		<div class="logo">
+			<?php get_template_part( 'core/header/header', 'content' ); ?>
 		    <?php demo_menu('primary-menu'); ?>
-			<?php demo_header_content(); ?>
 		</div>
