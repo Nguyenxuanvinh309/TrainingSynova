@@ -11,5 +11,7 @@ if(is_single()){
 		'previouspagelink' => __( 'Previous Page', 'demotheme' )
 		);
 	wp_link_pages( $link_pages );
+}else{
+	the_excerpt();
 }
 ?>
